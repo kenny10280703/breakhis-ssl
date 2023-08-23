@@ -6,8 +6,10 @@ This is my machine learning application developed for my master's degree project
 This project aims to demonstrate the power of transfer learning in self-supervised learning
 
 ## Dataset
-The breast histopathology images were downloaded from the offical site https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/.
-I had reorganised the dataset into 8 different folders each represents one class for the image classification task.
+The breast histopathology images were downloaded from the offical site https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/.</br>
+I had reorganised the dataset into 8 different folders each represents one class for the image classification task. The image data were loaded using the DataModule class provided by PyTorch Lightning, and then splitted into training set, validation set, test set. DataModule also allows changing the batch size of training/validation/test set.
 
 ## Model
-As this project aims to demonstrate the power of transfer learning in self-supervised learning, three different models were built using pretrained checkpoints of SimCLR, SwAV, 
+The three models were built using LightningModule class in PyTorch Lightning.</br>
+
+
